@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>de.paluch.tdi</groupId>
+        <artifactId>remote-mocking</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>remote-mocking-ear</artifactId>
+    <name>Remote Mocking EAR</name>
+    <packaging>ear</packaging>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>de.paluch.tdi</groupId>
+            <artifactId>remote-mocking-common</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>de.paluch.tdi</groupId>
+            <artifactId>remote-mocking-ejb</artifactId>
+            <type>ejb</type>
+        </dependency>
+
+        <dependency>
+            <groupId>de.paluch.tdi</groupId>
+            <artifactId>remote-mocking-war</artifactId>
+            <type>war</type>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-ear-plugin</artifactId>
+                <configuration>
+                    <version>6</version>
+
+                    <jboss>
+                        <loader-repository>
+                            org:loader= ${project.build.finalName}.ear
+                        </loader-repository>
+                        <loader-repository-config>
+                            java2ParentDelegation=false
+                        </loader-repository-config>
+                    </jboss>
+                    <archive>
+                        <manifestEntries>
+                            <Dependencies>org.slf4j export, org.infinispan export</Dependencies>
+                        </manifestEntries>
+                    </archive>
+
+                    <modules>
+                        <ejbModule>
+                            <groupId>de.paluch.tdi</groupId>
+                            <artifactId>remote-mocking-ejb</artifactId>
+                        </ejbModule>
+
+                        <webModule>
+                            <groupId>de.paluch.tdi</groupId>
+                            <artifactId>remote-mocking-war</artifactId>
+                            <context-root>/remote-mocking</context-root>
+                        </webModule>
+                    </modules>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

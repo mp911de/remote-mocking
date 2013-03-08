@@ -1,0 +1,9 @@
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="ehcache.xsd"
+         updateCheck="false" monitoring="autodetect"
+         dynamicConfig="true">
+
+    <cache name="remote-mocking" maxElementsInMemory="10000" eternal="false" overflowToDisk="false"
+           timeToIdleSeconds="1800"
+           timeToLiveSeconds="3600" diskPersistent="false"/>
+</ehcache>

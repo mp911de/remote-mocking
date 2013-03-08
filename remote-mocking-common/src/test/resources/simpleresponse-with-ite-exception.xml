@@ -1,0 +1,5 @@
+<response id="99">
+    <exception message="blubb">
+        <exceptionClass>java.lang.reflect.InvocationTargetException</exceptionClass>
+    </exception>
+</response>

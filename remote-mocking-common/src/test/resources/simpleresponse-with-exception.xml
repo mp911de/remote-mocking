@@ -1,0 +1,5 @@
+<response id="99">
+    <exception message="error">
+        <exceptionClass>java.lang.ClassNotFoundException</exceptionClass>
+    </exception>
+</response>

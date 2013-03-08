@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+
+    <servlet>
+        <servlet-name>Resteasy</servlet-name>
+        <servlet-class>
+            org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher
+        </servlet-class>
+        <init-param>
+            <param-name>resteasy.scan</param-name>
+            <param-value>true</param-value>
+        </init-param>
+
+        <init-param>
+            <param-name>resteasy.servlet.mapping.prefix</param-name>
+            <param-value>/rest</param-value>
+        </init-param>
+    </servlet>
+
+    <servlet>
+        <servlet-name>MockManagement</servlet-name>
+        <servlet-class>de.paluch.tdi.remotemocking.web.management.MockManagement</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>AwsItemSearchWs</servlet-name>
+        <servlet-class>de.paluch.tdi.remotemocking.web.ws.AwsItemSearchWs</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Resteasy</servlet-name>
+        <url-pattern>/rest/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>MockManagement</servlet-name>
+        <url-pattern>/ws/MockManagement</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>AwsItemSearchWs</servlet-name>
+        <url-pattern>/ws/AwsItemSearchWs</url-pattern>
+    </servlet-mapping>
+</web-app>

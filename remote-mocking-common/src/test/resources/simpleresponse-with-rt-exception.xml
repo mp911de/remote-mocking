@@ -1,0 +1,5 @@
+<response id="99">
+    <exception>
+        <exceptionClass>java.lang.NullPointerException</exceptionClass>
+    </exception>
+</response>

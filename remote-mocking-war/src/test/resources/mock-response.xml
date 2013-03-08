@@ -1,0 +1,203 @@
+<awsItemSearchResponse>
+    <ns:ItemSearchResponse xmlns:ns="http://webservices.amazon.com/AWSECommerceService/2011-08-01">
+        <!--Optional:-->
+        <ns:OperationRequest>
+            <!--Optional:-->
+            <ns:HTTPHeaders>
+                <!--Zero or more repetitions:-->
+                <ns:Header Name="?" Value="?"/>
+            </ns:HTTPHeaders>
+            <!--Optional:-->
+            <ns:RequestId>theRequestId</ns:RequestId>
+            <!--Optional:-->
+            <ns:Arguments>
+                <!--1 or more repetitions:-->
+                <ns:Argument Name="?" Value="?"/>
+            </ns:Arguments>
+            <!--Optional:-->
+            <ns:Errors>
+                <!--1 or more repetitions:-->
+                <ns:Error>
+                    <ns:Code>?</ns:Code>
+                    <ns:Message>?</ns:Message>
+                </ns:Error>
+            </ns:Errors>
+            <!--Optional:-->
+            <ns:RequestProcessingTime>12345</ns:RequestProcessingTime>
+        </ns:OperationRequest>
+        <!--Zero or more repetitions:-->
+        <ns:Items>
+            <!--Optional:-->
+            <ns:Request>
+                <!--Optional:-->
+                <ns:IsValid>?</ns:IsValid>
+                <!--Optional:-->
+                <ns:BrowseNodeLookupRequest>
+                    <!--Zero or more repetitions:-->
+                    <ns:BrowseNodeId>?</ns:BrowseNodeId>
+                    <!--Zero or more repetitions:-->
+                    <ns:ResponseGroup>?</ns:ResponseGroup>
+                </ns:BrowseNodeLookupRequest>
+                <!--Optional:-->
+                <ns:ItemSearchRequest>
+                    <!--Optional:-->
+                    <ns:Actor>?</ns:Actor>
+                    <!--Optional:-->
+                    <ns:Conductor>?</ns:Conductor>
+                    <!--Optional:-->
+                    <ns:Director>?</ns:Director>
+
+                    <!--Optional:-->
+                    <ns:Keywords>?</ns:Keywords>
+                    <!--Optional:-->
+                    <ns:Manufacturer>?</ns:Manufacturer>
+                    <!--Optional:-->
+                    <ns:MusicLabel>?</ns:MusicLabel>
+                    <!--Optional:-->
+                    <ns:Orchestra>?</ns:Orchestra>
+                    <!--Optional:-->
+                    <ns:Power>?</ns:Power>
+                    <!--Optional:-->
+                    <ns:Publisher>?</ns:Publisher>
+                    <!--Zero or more repetitions:-->
+                    <ns:RelationshipType>?</ns:RelationshipType>
+                    <!--Zero or more repetitions:-->
+                    <ns:ResponseGroup>?</ns:ResponseGroup>
+                    <!--Optional:-->
+                    <ns:SearchIndex>?</ns:SearchIndex>
+                    <!--Optional:-->
+                    <ns:Sort>?</ns:Sort>
+                    <!--Optional:-->
+                    <ns:Title>?</ns:Title>
+                    <!--Optional:-->
+                    <ns:ReleaseDate>?</ns:ReleaseDate>
+                    <!--Optional:-->
+                    <ns:IncludeReviewsSummary>?</ns:IncludeReviewsSummary>
+                </ns:ItemSearchRequest>
+                <ns:ItemLookupRequest>
+
+                    <!--Optional:-->
+                    <ns:MerchantId>?</ns:MerchantId>
+                    <!--Zero or more repetitions:-->
+                    <ns:ItemId>?</ns:ItemId>
+                    <!--Zero or more repetitions:-->
+                    <ns:ResponseGroup>?</ns:ResponseGroup>
+                    <!--Optional:-->
+                    <ns:IncludeReviewsSummary>?</ns:IncludeReviewsSummary>
+                </ns:ItemLookupRequest>
+                <!--Optional:-->
+                <ns:CartGetRequest>
+                    <!--Optional:-->
+                    <ns:CartId>?</ns:CartId>
+                    <!--Optional:-->
+                    <ns:HMAC>?</ns:HMAC>
+                    <!--Optional:-->
+                    <ns:MergeCart>?</ns:MergeCart>
+                    <!--Zero or more repetitions:-->
+                    <ns:ResponseGroup>?</ns:ResponseGroup>
+                </ns:CartGetRequest>
+                <!--Optional:-->
+                <ns:CartAddRequest>
+                    <!--Optional:-->
+                    <ns:CartId>?</ns:CartId>
+                    <!--Optional:-->
+                    <ns:HMAC>?</ns:HMAC>
+                    <!--Optional:-->
+                    <ns:MergeCart>?</ns:MergeCart>
+                    <!--Optional:-->
+                    <ns:Items>
+                        <!--Zero or more repetitions:-->
+                        <ns:Item>
+                            <!--Optional:-->
+                            <ns:ASIN>?</ns:ASIN>
+                            <!--Optional:-->
+                            <ns:OfferListingId>?</ns:OfferListingId>
+                            <!--Optional:-->
+                            <ns:AssociateTag>?</ns:AssociateTag>
+                            <!--Optional:-->
+                            <ns:ListItemId>?</ns:ListItemId>
+                        </ns:Item>
+                    </ns:Items>
+                    <!--Zero or more repetitions:-->
+                    <ns:ResponseGroup>?</ns:ResponseGroup>
+                </ns:CartAddRequest>
+                <!--Optional:-->
+                <ns:CartCreateRequest>
+                    <!--Optional:-->
+                    <ns:MergeCart>?</ns:MergeCart>
+                    <!--Optional:-->
+                    <ns:Items>
+                        <!--Zero or more repetitions:-->
+                        <ns:Item>
+                            <!--Optional:-->
+                            <ns:ASIN>?</ns:ASIN>
+                            <!--Optional:-->
+                            <ns:OfferListingId>?</ns:OfferListingId>
+                            <!--Optional:-->
+                            <ns:AssociateTag>?</ns:AssociateTag>
+                            <!--Optional:-->
+                            <ns:ListItemId>?</ns:ListItemId>
+                            <!--Zero or more repetitions:-->
+                            <ns:MetaData>
+                                <!--Optional:-->
+                                <ns:Key>?</ns:Key>
+                                <!--Optional:-->
+                                <ns:Value>?</ns:Value>
+                            </ns:MetaData>
+                        </ns:Item>
+                    </ns:Items>
+                    <!--Zero or more repetitions:-->
+                    <ns:ResponseGroup>?</ns:ResponseGroup>
+                </ns:CartCreateRequest>
+                <!--Optional:-->
+                <ns:CartModifyRequest>
+                    <!--Optional:-->
+                    <ns:CartId>?</ns:CartId>
+                    <!--Optional:-->
+                    <ns:HMAC>?</ns:HMAC>
+                    <!--Optional:-->
+                    <ns:MergeCart>?</ns:MergeCart>
+                    <!--Optional:-->
+                    <ns:Items>
+                        <!--Zero or more repetitions:-->
+                        <ns:Item>
+                        </ns:Item>
+                    </ns:Items>
+                    <!--Zero or more repetitions:-->
+                    <ns:ResponseGroup>?</ns:ResponseGroup>
+                </ns:CartModifyRequest>
+                <!--Optional:-->
+                <ns:CartClearRequest>
+                    <!--Optional:-->
+                    <ns:CartId>?</ns:CartId>
+                    <!--Optional:-->
+                    <ns:HMAC>?</ns:HMAC>
+                    <!--Optional:-->
+                    <ns:MergeCart>?</ns:MergeCart>
+                    <!--Zero or more repetitions:-->
+                    <ns:ResponseGroup>?</ns:ResponseGroup>
+                </ns:CartClearRequest>
+                <!--Optional:-->
+                <ns:Errors>
+                    <!--1 or more repetitions:-->
+                    <ns:Error>
+                        <ns:Code>?</ns:Code>
+                        <ns:Message>?</ns:Message>
+                    </ns:Error>
+                </ns:Errors>
+            </ns:Request>
+            <!--Optional:-->
+            <ns:CorrectedQuery>
+                <!--Optional:-->
+                <ns:Keywords>?</ns:Keywords>
+                <!--Optional:-->
+                <ns:Message>?</ns:Message>
+            </ns:CorrectedQuery>
+            <!--Optional:-->
+            <ns:Qid>?</ns:Qid>
+            <!--Optional:-->
+            <ns:MoreSearchResultsUrl>?</ns:MoreSearchResultsUrl>
+            <!--Zero or more repetitions:-->
+        </ns:Items>
+    </ns:ItemSearchResponse>
+</awsItemSearchResponse>

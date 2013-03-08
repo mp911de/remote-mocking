@@ -1,0 +1,7 @@
+<remoteMockingConfiguration>
+    <fileDataStore path="/tmp"/>
+    <dynamicDataStore className="de.paluch.tdi.remotemocking.ejb.datastore.impl.infinispan.InfinispanDataStoreBean">
+        <injectField>infinispanCache</injectField>
+        <injectLookupName>java:/mylocalcache</injectLookupName>
+    </dynamicDataStore>
+</remoteMockingConfiguration>

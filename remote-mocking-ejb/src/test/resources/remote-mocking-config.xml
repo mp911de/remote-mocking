@@ -1,0 +1,5 @@
+<remoteMockingConfiguration>
+    <fileDataStore path="${basedir}/src/test/resources/responses"/>
+    <dynamicDataStore className="de.paluch.tdi.remotemocking.ejb.datastore.impl.ehcache.EhCacheDataStoreBean">
+    </dynamicDataStore>
+</remoteMockingConfiguration>
