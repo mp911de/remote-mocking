@@ -29,8 +29,10 @@ the only process which tries to access the mocks. Nevertheless the steps are as 
 
 1. Create a skeleton of your remote interface class (EJB, Web-Service, REST Resource, ...) which complies to the API contract
 2. Add the following two lines of code (more or less):
-`MockInvocationRecorder.recordInvocation("AwsItemSearchWs/itemSearch/" + awsAccessKeyId, marketplaceDomain, awsAccessKeyId, associateTag, xmlEscaping, validate, shared, request);
-return MockResponseFactory.getResponse("AwsItemSearchWs/itemSearch/" + awsAccessKeyId, AwsItemSearchResponse.class);`
+```java
+MockInvocationRecorder.recordInvocation("AwsItemSearchWs/itemSearch/" + awsAccessKeyId, marketplaceDomain, awsAccessKeyId, associateTag, xmlEscaping, validate, shared, request);
+return MockResponseFactory.getResponse("AwsItemSearchWs/itemSearch/" + awsAccessKeyId, AwsItemSearchResponse.class);
+```
 3. That's it.
 
 Invocation key principle
