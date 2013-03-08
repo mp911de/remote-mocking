@@ -27,13 +27,15 @@ How to mock
 Well, local mocking is quite easy. Remote mocking as well, but you have to be aware of the fact, that you're probably not
 the only process which tries to access the mocks. Nevertheless the steps are as following:
 
-1. Create a skeleton of your remote interface class (EJB, Web-Service, REST Resource, ...) which complies to the API contract
-2. Add the following two lines of code (more or less):
+First: Create a skeleton of your remote interface class (EJB, Web-Service, REST Resource, ...) which complies to the API contract
+Second: Add the following two lines of code (more or less):
+
 ```java
 MockInvocationRecorder.recordInvocation("AwsItemSearchWs/itemSearch/" + awsAccessKeyId, marketplaceDomain, awsAccessKeyId, associateTag, xmlEscaping, validate, shared, request);
 return MockResponseFactory.getResponse("AwsItemSearchWs/itemSearch/" + awsAccessKeyId, AwsItemSearchResponse.class);
 ```
-3. That's it.
+
+That's it.
 
 Invocation key principle
 -------------
