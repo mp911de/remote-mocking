@@ -1,3 +1,5 @@
+[![Build Status](https://buildhive.cloudbees.com/job/mp911de/job/remote-mocking/badge/icon)](https://buildhive.cloudbees.com/job/mp911de/job/remote-mocking/)
+
 Remote Mocking Framework for Integration-Tests
 =============
 
